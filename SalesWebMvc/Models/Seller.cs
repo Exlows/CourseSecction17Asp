@@ -11,8 +11,7 @@ namespace SalesWebMvc.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "{0} required")]
-        [StringLength(60, MinimumLength = 3, ErrorMessage = "Name size should be between 3 and 60")]
-        //[StringLength (60, MinimumLength = 3, ErrorMessage = "{0} size should be between {2} and {1}")] desta forma ele pega no {0} o nome do atributo, no caso Name, no {2} o segundo argumento e no {1} o primeiro
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "{0} size should be between {2} and {1}")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "{0} required")]
